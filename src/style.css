@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html {
+    background: url(./media/bg-repeat.jpg) repeat-x;
+    background-size: 100% 100vh;
+}
+p, input, button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFF;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.texto-home{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 60px;
+}
+.texto-home p{
+    font-weight: 900;
+    font-size: 20px;
+}
+.texto-home p:last-child{
+    font-weight: 400;
+    font-size: 15px;
+}
+.formulario{
+    width: 340px;
+    height: 380px;
+    background-color: #fff;
+}
+.formulario input{
+    color: #000;
+    font-weight: 400;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 15px 20px 0px 22px;
+    width: 300px;
+}
+.formulario input:first-child{
+    margin-top: 20px;
+}
+.formulario .mensagem{
+    padding: 8px 195px 75px 8px;
+}
+.formulario :-ms-input-placeholder{
+    color: #A8A8A8;
+}
+.formulario .obrigatorio{
+    border: none;
+    color: #000;
+    margin: 7px 0 0 15px;
+}
+.formulario .obrigatorio.erro{
+    margin-top: 15px;
+}
+.formulario .enviar{
+    display: inline-block;
+    cursor: pointer;
+    background-color: #3CCC87;
+    width: 300px;
+    border-radius: 5px;
+    padding: 12px 120px;
+    margin: 20px;
+}
+.formulario .borda-vermelha{
+    border: 1px solid #F52E2E;
+}
+.formulario .borda-verde{
+    border: 1px solid #00C22B;
+}
+.formulario .texto-vazio{
+    display: none;
+    position: absolute;
+    color: #f52e2e;
+    margin-left: 22px;
+    font-size: 10px;
+}
+
+@media (max-width: 525px){
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .texto-home{
+        margin: 20px;
+    }
+    .texto-home p{
+        text-align: center;
+    }
+}
